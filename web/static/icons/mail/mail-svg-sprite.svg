@@ -1,0 +1,77 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="mail-1">
+    <title>Mail</title>
+    <desc>A color styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    fill="#fff4e3" d="M2 12h60v40H2z"></path>
+    <path data-name="opacity" fill="#000064" opacity=".14" d="M2 12l30 27.4L62 12 29 47 5 18v34H2V12z"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4"
+    stroke-linejoin="round"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M2 12h60v40H2z" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="open-mail-1">
+    <title>Open Mail</title>
+    <desc>A color styled icon from Orion Icon Library.</desc>
+    <path d="M32 3L2 28v34h60V28L32 3z"
+    fill="#fff4e3" data-name="layer1"></path>
+    <path opacity=".14" fill="#000064" d="M41.071 40.929l1.009 1.015L62 28 32 3 2 28l19.92 13.944 1.009-1.015c3.905-3.905 14.237-3.905 18.142 0z"
+    data-name="opacity"></path>
+    <path d="M2 28l19.873 13.873M2 62l20.929-21.071c3.905-3.905 14.237-3.905 18.143 0L62 62m0-34L42.195 41.863"
+    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke="#2e4369"
+    fill="none" data-name="stroke" stroke-linejoin="round"></path>
+    <path d="M32 3L2 28v34h60V28L32 3z" stroke-width="2" stroke-miterlimit="10"
+    stroke-linecap="round" stroke="#2e4369" fill="none" data-name="stroke"
+    stroke-linejoin="round"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="read-email-1">
+    <title>Read Email</title>
+    <desc>A color styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    fill="#fff4e3" d="M54 33.6V21l8 6.9-8 5.7zm-44 0V21l-8 6.9 8 5.7z"></path>
+    <path data-name="opacity" fill="#000064" opacity=".14" d="M54 33.6V21l8 6.9-8 5.7zm-44 0V21l-8 6.9 8 5.7z"></path>
+    <path data-name="layer2" d="M22.9 40.9c3.9-3.9 14.2-3.9 18.1 0l1 1 12-8.3V2H10v31.6l11.9 8.3z"
+    fill="#eefcff"></path>
+    <path data-name="layer1" d="M41.1 40.9C37.2 37 26.9 37 23 40.9l-1 1L2 28v34h60V28L42.1 41.9z"
+    fill="#fff4e3"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M10 21.1L2 28m52-6.9l8 6.9m-8 5.6V2H10v31.6M18 12h10m-4 8h22m-28 8h28"
+    stroke-linejoin="round"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M62 28v34H2V28m40.1 13.9L62 28M2 28l19.9 13.9"
+    stroke-linejoin="round"></path>
+    <path data-name="stroke" d="M2 62l20.9-21.1c3.9-3.9 14.2-3.9 18.1 0L62 62"
+    fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+    stroke-width="2" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="write-email-1">
+    <title>Write Email</title>
+    <desc>A color styled icon from Orion Icon Library.</desc>
+    <path data-name="layer3"
+    fill="#fff4e3" d="M56 29.9V7H2v36h39.1l14-14 .9.9z"></path>
+    <path data-name="opacity" fill="#000064" opacity=".14" d="M2 7l27 20.6L56 7v1.5L26 35 2 11.5V7z"></path>
+    <path data-name="layer2" fill="#ffe1bd" d="M30 61l11.4-4.3-7-7L30 61z"></path>
+    <path data-name="layer1" fill="#f27e7c" d="M55.1 29L34.4 49.7l7 7L62.2 36l-7.1-7z"></path>
+    <path data-name="opacity" fill="#000064" opacity=".14" d="M35.1 43h6l10-10-3-3-13 13z"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M41 43H2V7h54v22.7" stroke-linejoin="round"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M2 7l27 20.6L56 7m-.9 22L34.4 49.7 30 61l11.4-4.3L62.2 36l-7.1-7zM34.4 49.7l7 7"
+    stroke-linejoin="round"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="paper-plane-1">
+    <title>Paper Plane</title>
+    <desc>A color styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    fill="#dbf1ff" d="M3 29L59 5l-9 48-24-15-23-9z"></path>
+    <path data-name="opacity" fill="#000064" opacity=".14" d="M26 38L59 5 3 29l23 9z"></path>
+    <path data-name="layer1" fill="#dbf1ff" d="M36.3 44.4L26 59V38l10.3 6.4z"></path>
+    <path data-name="opacity" fill="#000064" opacity=".14" d="M36.3 44.4L26 59V38l10.3 6.4z"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M26 38v21l10.3-14.6" stroke-linejoin="round"></path>
+    <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+    stroke-miterlimit="10" stroke-width="2" d="M3 29L59 5l-9 48-24-15-23-9zM59 5L26 38"
+    stroke-linejoin="round"></path>
+  </symbol>
+</svg>

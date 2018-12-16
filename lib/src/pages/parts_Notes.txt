@@ -1,0 +1,104 @@
+/*
+import 'Aptechi/conctx/blog/Adorra/adorra.dart';
+import 'Aptechi/conctx/blog/Andonna/andonna.dart';
+import 'Aptechi/conctx/blog/Aslan/aslan.dart';
+import 'Aptechi/conctx/blog/Peitar/peitar.dart';
+import 'Aptechi/conctx/blog/Thea/thea.dart';
+import 'Aptechi/conctx/contact/Dusaro/dusaro.dart';
+import 'Aptechi/conctx/contact/Tonica/tonica.dart';
+import 'Aptechi/conctx/feature/AppShowcase/app_showcase.dart';
+import 'Aptechi/conctx/feature/Koldof/koldof.dart';
+import 'Aptechi/conctx/feature/Lerin/lerin.dart';
+import 'Aptechi/conctx/feature/Luna/luna.dart';
+import 'Aptechi/conctx/feature/Mitar/mitar.dart';
+import 'Aptechi/conctx/feature/Zilka/zilka.dart';
+import 'Aptechi/conctx/header/Elthen/elthen.dart';
+import 'Aptechi/conctx/header/Nadorn/nadorn.dart';
+import 'Aptechi/conctx/header/Ryiah/ryiah.dart';
+import 'Aptechi/conctx/header/Zigmal/zigmal.dart';
+import 'Aptechi/conctx/pricing/Frodaka/frodaka.dart';
+import 'Aptechi/conctx/pricing/Jagerg/jagerg.dart';
+import 'Aptechi/conctx/pricing/Nelena/nelena.dart';
+import 'Aptechi/conctx/pricing/Nymitar/nymitar.dart';
+import 'Aptechi/conctx/pricing/Sidath/sidath.dart';
+import 'cards/blog/pLeftRight/p_left_right.dart';
+import 'cards/blog/pleft/pleft.dart';
+import 'cards/blog/pright/pright.dart';
+import 'shared/footer/footer.dart';
+import 'shared/header/header.dart';
+import 'sharedApp/conctx/conctx.dart';
+import 'sharedApp/conctx_awesome/conctx_awesome.dart';
+import 'sharedApp/conctx_next/conctx_next.dart';
+import 'sharedApp/conctx_stand/conctx_stand.dart';
+*/
+/*
+import '../../Aptechi/conctx/blog/Adorra/adorra.dart.template.dart' as adorra;
+import '../../Aptechi/conctx/blog/Andonna/andonna.dart.template.dart' as andonna ;
+import '../../Aptechi/conctx/blog/Aslan/aslan.dart.template.dart' as aslan ;
+import '../../Aptechi/conctx/blog/Peitar/peitar.dart.template.dart' as peitar ;
+import '../../Aptechi/conctx/blog/Thea/thea.dart.template.dart' as thea ;
+import '../../Aptechi/conctx/contact/Dusaro/dusaro.dart.template.dart' as dusaro ;
+import '../../Aptechi/conctx/contact/Tonica/tonica.dart.template.dart' as tonica ;
+import '../../Aptechi/conctx/feature/AppShowcase/app_showcase.dart.template.dart' as app_showcase ;
+import '../../Aptechi/conctx/feature/Koldof/koldof.dart.template.dart' as koldof ;
+import '../../Aptechi/conctx/feature/Lerin/lerin.dart.template.dart' as lerin ;
+import '../../Aptechi/conctx/feature/Luna/luna.dart.template.dart' as luna ;
+import '../../Aptechi/conctx/feature/Mitar/mitar.dart.template.dart' as mitar ;
+import '../../Aptechi/conctx/feature/Zilka/zilka.dart.template.dart' as zilka ;
+import '../../Aptechi/conctx/header/Elthen/elthen.dart.template.dart' as elthen ;
+import '../../Aptechi/conctx/header/Nadorn/nadorn.dart.template.dart' as nadorn ;
+import '../../Aptechi/conctx/header/Ryiah/ryiah.dart.template.dart' as ryiah ;
+import '../../Aptechi/conctx/header/Zigmal/zigmal.dart.template.dart' as zigmal ;
+import '../../Aptechi/conctx/pricing/Frodaka/frodaka.dart.template.dart' as frodaka ;
+import '../../Aptechi/conctx/pricing/Jagerg/jagerg.dart.template.dart' as jagerg ;
+import '../../Aptechi/conctx/pricing/Nelena/nelena.dart.template.dart' as nelena ;
+import '../../Aptechi/conctx/pricing/Nymitar/nymitar.dart.template.dart' as nymitar ;
+import '../../Aptechi/conctx/pricing/Sidath/sidath.dart.template.dart' as sidath ;
+import '../../cards/blog/pLeftRight/p_left_right.dart.template.dart' as p_left_right ;
+import '../../cards/blog/pleft/pleft.dart.template.dart' as pleft ;
+import '../../cards/blog/pright/pright.dart.template.dart' as pright ;
+import '../../shared/footer/footer.dart.template.dart' as footer ;
+import '../../shared/header/header.dart.template.dart' as header ;
+import '../../sharedApp/conctx/conctx.dart.template.dart' as conctx ;
+import '../../sharedApp/conctx_awesome/conctx_awesome.dart.template.dart' as conctx_awesome ;
+import '../../sharedApp/conctx_next/conctx_next.dart.template.dart' as conctx_next ;
+import '../../sharedApp/conctx_stand/conctx_stand.dart.template.dart' as conctx_stand ;
+
+*/
+
+/*
+[routerLink]="RoutePaths.aboutUs.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.addProduct.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.blogPost.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.blogPosts.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.discover.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.eCommerce.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.landing.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.login.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.p404.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.p422.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.p500.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.product.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.profile.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.register.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.searchSidebar.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.settings.toUrl()"
+[routerLinkActive]="'active-route'"
+[routerLink]="RoutePaths.team.toUrl()"
+[routerLinkActive]="'active-route'"
+*/

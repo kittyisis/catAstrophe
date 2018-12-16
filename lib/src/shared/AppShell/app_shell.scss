@@ -1,0 +1,83 @@
+/*
+* Legion Market v0.0.1
+* Copyright 2018, Legion Market
+* www.legionmarket.com
+* Free to use under the GPLv3 license.
+*/
+/* Add a black background color to the top navigation */
+
+
+
+
+@import 'package:angular_components/app_layout/mixins';
+@import 'package:tlm_paper/src/theme/variables';
+:host {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.controls {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.md-background{
+  background-color: $primaryDarkColor;
+
+}
+.text-p{
+  color: $primaryTextColor;
+}
+.text-s{
+  color: $secondaryTextColor;
+}
+.material-header{
+  background: $primaryDarkColor;
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: $secondaryTextColor;
+    text-decoration: none;
+    background-color: $secondaryDarkColor;
+  }
+}
+.material-list-item{
+  background-color: $primaryDarkColor;
+  text-align: justify-all;
+}
+.custom-width {
+  @include mat-drawer-width(38%);
+  @include mat-temporary-drawer-width(38%);
+}
+.material-drawer{
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: $primaryTextColor;
+    text-decoration: none;
+    background-color: $secondaryDarkColor;
+  }
+
+}
+.footer{
+  background: $primaryDarkColor;
+  .text-p{
+    color: $primaryTextColor;
+  }
+
+}
+
+
+
+//use to remove from view of small screen
+@media screen and (max-width: 600px) {
+  .rm-small-screen {
+    display: none;
+  }
+}
+//use to remove from view of standard screen
+@media screen and (min-width: 601px){
+  .rm-standard-screen{
+    display: none;
+  }
+
+}
