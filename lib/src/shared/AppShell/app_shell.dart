@@ -42,7 +42,7 @@ class AppShell implements OnInit {
   bool end = false;
   bool overlay = false;
   String name = "My Fat Cat";
-  String abr = "TLM";
+  String abr = "MFC";
   String copyright = DateTime.now().year.toString();
   Element menuSub;
   Element menuBtn;
