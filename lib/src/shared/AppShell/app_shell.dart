@@ -41,7 +41,7 @@ class AppShell implements OnInit {
   bool customWidth = false;
   bool end = false;
   bool overlay = false;
-  String name = "Legion Market";
+  String name = "My Fat Cat";
   String abr = "TLM";
   String copyright = DateTime.now().year.toString();
   Element menuSub;
