@@ -12,7 +12,7 @@ dependencies:
   font_awesome: 4.7.0+1
   chartjs: ^0.5.0
   md_bootstrap_scss:
-    git: https://github.com/dart-land/md_bootstrap_scss
+    git: git@github.com:kittyisis/md_bootstrap_scss.git
   tlm_paper:
     git: https://github.com/Dart-Land/tlm_paper.git
   tlmThemeLogic:
