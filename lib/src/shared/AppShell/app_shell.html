@@ -134,52 +134,57 @@
 					 [attr.overlay]="overlay ? '' : null"
 	>
 		<section class="md-background navbar">
-			<h2>hello</h2>
+			<div class="navbar-brand title-bar ">
+			<span>
+				<h2 class="text-white">Kitty</h2>
+			</span>
+
+			</div>
 		</section>
 
-		<div *deferredContent class="material-drawer" >
+		<div *deferredContent class="material-drawer md-background" >
 			<div group class="mat-drawer-spacer"></div>
 			<div group>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.landing.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.landing.toUrl()" [routerLinkActive]="'active-route'">
 						<span>
-							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#real-estate-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#home-1"></use></svg>
 						</span> home
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.aboutUs.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.aboutUs.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#shield-grid-1"></use></svg>
 						</i> About
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.addProduct.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.addProduct.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#notebook-1"></use></svg>
-						</i> Add Product
+							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#envelope-1"></use></svg>
+						</i> Journal
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.blogPost.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.blogPost.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-4"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#sent-email-1"></use></svg>
-						</i> Blog Post
+							<svg width="30" height="50" class="theme-color-4"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#home-1"></use></svg>
+						</i> Feed
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.blogPosts.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.blogPosts.toUrl()" [routerLinkActive]="'active-route'">
 						<i >
-							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#notebook-1"></use></svg>
-						</i> Blog Posts
+							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#sandwich-1"></use></svg>
+						</i> Food
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#binocular-1"></use></svg>
-						</i> Discover
+						</i> Feeds
 					</a>
 				</material-list-item>
 				<material-list-item>
@@ -213,24 +218,22 @@
 				<material-list-item>
 					<a class="dropdown-item" [routerLink]="RoutePaths.register.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-10"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#label-tag-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-10">
+								<use xlink:href="/static/icons/md-drawer/md-drawer.svg#label-tag-1"></use>
+							</svg>
 						</i> Register
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.searchSidebar.toUrl()" [routerLinkActive]="'active-route'">
-						<i>
-							<svg width="30" height="50" class="theme-color-12"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#find-document-1"></use></svg>
-						</i> Search
 					</a>
 				</material-list-item>
 				<material-list-item>
 					<a class="dropdown-item" [routerLink]="RoutePaths.settings.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-13"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#archive-settings-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-13">
+								<use xlink:href="/static/icons/md-drawer/md-drawer.svg#archive-settings-1"></use>
+							</svg>
 						</i> Settings
 					</a>
 				</material-list-item>
+
 			</div>
 
 			<div group class="material-drawer md-background text-white">
@@ -352,7 +355,7 @@
 			<material-button icon
 							 class="material-drawer-button" (trigger)="drawer.toggle()">
 			<div class="nav-brand">
-				<svg width="24" height="24" class="theme-color-5"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#menu-hamburger-1"></use></svg>
+				<svg width="24" height="24" class="theme-color-5"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#asterisk-bulleted-list-1"></use></svg>
 			</div>
 			</material-button>
 			<span><a class="navbar-brand text-p rm-small-screen" [routerLink]="RoutePaths.aboutUs.toUrl()" [routerLinkActive]="'active-route'">{{name}}</a></span>
@@ -361,38 +364,40 @@
 				<nav class="nav-item rm-small-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.home.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#real-estate-1"></use></svg>
+							<svg width="30" height="50" class="theme-line-0"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#home-1"></use></svg>
 						</i> Home
 					</a>
 				</nav>
 				<nav class="nav-item rm-standard-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.home.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#real-estate-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#envelope-1"></use></svg>
 						</i>
 					</a>
 				</nav>
 				<nav class="nav-item rm-small-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.product.toUrl()" [routerLinkActive]="'active-route'">
-						<i><svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#mail-1"></use></svg></i> Mail
+						<i>
+							<svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#envelope-1"></use></svg>
+						</i> Journal
 					</a>
 				</nav>
 				<nav class="nav-item rm-standard-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.product.toUrl()" [routerLinkActive]="'active-route'">
-						<i><svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#mail-1"></use></svg></i>
+						<i><svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#electronic-medical-record-1"></use></svg></i>
 					</a>
 				</nav>
 				<nav class="nav-item rm-small-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.eCommerce.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#grocery-cart-1"></use></svg>
-						</i> Shop
+							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#electronic-medical-record-1"></use></svg>
+						</i> Photos
 					</a>
 				</nav>
 				<nav class="nav-item rm-standard-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.eCommerce.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/tlmRouterTheme_sprite/tlmRouterThemeAppShell-svg-sprite.svg#grocery-cart-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#electronic-medical-record-1"></use></svg>
 						</i>
 					</a>
 				</nav>
