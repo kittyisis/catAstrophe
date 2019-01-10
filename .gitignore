@@ -4,6 +4,7 @@
 build/
 release/
 deploy/
+release.zip
 # Remove the following pattern if you wish to check in your lock file
 pubspec.lock
 

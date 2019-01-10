@@ -234,7 +234,7 @@ final List<BlogCard> adorraCards = [
     "The Adoption",
     "She was born on December 4 2015",
     {
-      "subTitle": "Playful musics hurts most deaths.",
+      "subTitle": "Before my family and I adopted her, her name was Rosalie",
       "subTitleLink": "#",
       "description":
           "Born on December 4th 2015 and we adopted her two months later.",
