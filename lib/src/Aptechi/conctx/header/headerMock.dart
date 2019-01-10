@@ -11,7 +11,7 @@ List<HeaderElthen> loadHeaderElthen([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     HeaderElthen x = new HeaderElthen()
       ..id = i
-      ..photo = "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg"
+      ..photo = "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg"
       ..title = _titles[num.nextInt(15)]
       ..subTitle = _subTitles[num.nextInt(8)]
       ..menus = _menus
@@ -30,10 +30,10 @@ List<HeaderNadorn> loadHeaderNadorn([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     HeaderNadorn x = new HeaderNadorn()
       ..id = i
-      // web/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg
-      ..photo = "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg"
-      ..title = _titles[num.nextInt(15)]
-      ..subTitle = _subTitles[num.nextInt(8)]
+      // web/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg
+      ..photo = "/static/images/kittyPhotos/img_1.jpg"
+      ..title = "For an animal that loves to get into everyone’s food!" //_titles[num.nextInt(15)]
+      ..subTitle = "She’s seriously picky about what she actually wants to eat" //_subTitles[num.nextInt(8)]
       ..menus = _menus
       ..subMenus = _subMenus
       ..callToAction = _callToActions[num.nextInt(3)]
@@ -57,7 +57,7 @@ List<HeaderRyiah> loadHeaderRyiah([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     HeaderRyiah x = new HeaderRyiah()
       ..id = i
-      ..photo = "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg"
+      ..photo = "/static/images/unsplash/img_1.jpg"
       ..title = _titles[num.nextInt(15)]
       ..subTitle = _subTitles[num.nextInt(8)]
       ..menus = _menus
@@ -76,7 +76,7 @@ List<HeaderZigmal> loadHeaderZigmal([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     HeaderZigmal x = new HeaderZigmal()
       ..id = i
-      ..photo = "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg"
+      ..photo = "/static/images/unsplash/img_2.jpg"
       ..title = _titles[num.nextInt(15)]
       ..subTitle = _subTitles[num.nextInt(8)]
       ..menus = _menus
@@ -89,21 +89,16 @@ List<HeaderZigmal> loadHeaderZigmal([int howMany = 1]) {
 }
 
 List<imageCarousel> _carousels = [
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 1),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 2),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 3),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 4),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 5),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 6),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg", 7),
+  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_6.jpg", 1),
+  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_0.jpg", 2),
 ];
 
 // Default Inputs
 List<Map<String, String>> _callToActions = [
-  {"buttonText": "Get More", "buttonLink": "#"},
-  {"buttonText": "Order Now", "buttonLink": "#"},
-  {"buttonText": "Search", "buttonLink": "#"},
-  {"buttonText": "Read More", "buttonLink": "#"},
+  {"buttonText": "Get More", "buttonLink": "#/blog_posts"},
+  {"buttonText": "Order Now", "buttonLink": "#/home"},
+  {"buttonText": "Search", "buttonLink": "#/about_us"},
+  {"buttonText": "Read More", "buttonLink": "#/discover"},
 ];
 List<menu> _menus = [
   menu.data(0, "AdFreeZone", "#"),
@@ -146,8 +141,8 @@ List<menu> _subMenus = [
 ];
 
 List<video> _videos = [
-  video.data(0, {"mp4": "/static/video/lady.mp4", "webm": "/static/video/lady.webm"}, "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg"),
-  video.data(1, {"mp4": "/static/video/man.mp4", "webm": "/static/video/man.webm"}, "/static/images/kittyPhotos/img_${num.nextInt(9)}.jpg"),
+  video.data(0, {"mp4": "/static/video/Videos3338.mp4", "webm": "/static/video/Videos3338.webm"}, "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg"),
+  video.data(1, {"mp4": "/static/video/Videos3338.mp4", "webm": "/static/video/Videos3338.webm"}, "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg"),
 ];
 //Titles varchar(50)
 List<String> _titles = [

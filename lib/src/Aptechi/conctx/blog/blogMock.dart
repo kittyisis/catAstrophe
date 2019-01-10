@@ -1,6 +1,8 @@
+
 import 'package:app/logic/blog.dart';
 import 'package:app/logic/cards_blog.dart';
 
+import 'dart:math';
 final List<Blog> mockBlog = [
   Blog(mockCards, "Nixs sunt compaters de teres orgia."),
 ];
@@ -35,10 +37,11 @@ list.forEach((item) {
   print('${list.indexOf(item)}: $item');
 });
 */
+Random num = new Random();
 
 final List<BlogCard> mockCards = [
   BlogCard(
-    "/static/images/mobile/tlm-c361024by720.jpg",
+    "/static/images/unsplash/img_${num.nextInt(5)}.jpg",
     "Cur tabes velum.",
     "Est domesticus stella, cesaris. Planetas persuadere, tanquam varius brabeuta. Finis de varius frondator, amor fuga.",
     {
@@ -58,7 +61,7 @@ final List<BlogCard> mockCards = [
     1,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c61024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Faith, amnesty, and horror.",
     "Desolation is an addled skull. The tobacco fears with pestilence, desire the reef until it screams.",
     {
@@ -77,7 +80,7 @@ final List<BlogCard> mockCards = [
     2,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c81024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -86,7 +89,7 @@ final List<BlogCard> mockCards = [
       "description": "The beloved light of stigma is to believe with harmony.",
       "descMoreLink": "#",
       "descMore": "Read Now",
-      "descBtn": "btn btn-success btn-round",
+      "descBtn": "btn btn-round",
       "authorBy": "by",
       "authorLink": "#",
       "authorName": "Jony Wade",
@@ -96,7 +99,7 @@ final List<BlogCard> mockCards = [
     3,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c951024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -115,7 +118,7 @@ final List<BlogCard> mockCards = [
     4,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c961024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -135,7 +138,7 @@ final List<BlogCard> mockCards = [
     5,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c871024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -154,7 +157,7 @@ final List<BlogCard> mockCards = [
     6,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c81024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -173,7 +176,7 @@ final List<BlogCard> mockCards = [
     7,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c911024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -192,7 +195,7 @@ final List<BlogCard> mockCards = [
     8,
   ),
   BlogCard(
-    "/static/images/mobile/tlm-c181024by720.jpg",
+    "/static/images/kittyPhotos/img_${num.nextInt(5)}.jpg",
     "Observare semper ducc.",
     "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
     {
@@ -209,142 +212,5 @@ final List<BlogCard> mockCards = [
       "wroteDate": "2018",
     },
     9,
-  ),
-  BlogCard(
-    "/static/images/mobile/tlm-c191024by720.jpg",
-    "Observare semper ducc.",
-    "The surrender of your arts will listen beautifully when you hear that advice is the saint.",
-    {
-      "subTitle": "Genetrix talis cursus est.",
-      "subTitleLink": "#",
-      "description": "Competitions persuadere! ",
-      "descMoreLink": "#",
-      "descMore": "Let's Go",
-      "descBtn": "btn btn-danger btn-round",
-      "authorBy": "by",
-      "authorLink": "#",
-      "authorName": "Maet Lu",
-      "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-      "wroteDate": "2018",
-    },
-    10,
-  ),
-];
-final List<BlogCard> mockCardsRight = [
-  BlogCard("/static/images/mobile/tlm-c61024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Cotta, saga, et ionicis tormento.",
-    "subTitleLink": "#",
-    "description":
-        "Pol, particula! Never visualize the ego, for you cannot hear it. One must absorb the lotus in order to study the karma of imminent milk.",
-    "descMoreLink": "#",
-    "descMore": "Adelphiss cantare!",
-    "descBtn": "btn btn-info btn-round",
-    "authorBy": "by",
-    "authorLink": "#",
-    "authorName": "Randy Smuit",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  }),
-  BlogCard("/static/images/mobile/tlm-c191024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Cur hibrida tolerare?",
-    "subTitleLink": "#",
-    "description": "Heat squeezed sauerkraut in a basin with teriyaki for about an hour to bring down their bitterness.",
-    "descMoreLink": "#",
-    "descMore": "Read More",
-    "descBtn": "btn btn-warning btn-round",
-    "authorBy": "not by",
-    "authorLink": "#",
-    "authorName": "Tim Smit",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  }),
-  BlogCard("/static/images/mobile/tlm-c81024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Superbus gemnas ducunt ad visus.",
-    "subTitleLink": "#",
-    "description": "The beloved light of stigma is to believe with harmony.",
-    "descMoreLink": "#",
-    "descMore": "Read More",
-    "descBtn": "btn btn-dark btn-round",
-    "authorBy": "by",
-    "authorLink": "#",
-    "authorName": "Jony Wade",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  }),
-  BlogCard("/static/images/mobile/tlm-c91024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Genetrix talis cursus est.",
-    "subTitleLink": "#",
-    "description": "When the breeze hobbles for isla de muerta, all shipmates fear coal-black, proud shores.",
-    "descMoreLink": "#",
-    "descMore": "Let's Go",
-    "descBtn": "btn btn-secondary btn-round",
-    "authorBy": "by",
-    "authorLink": "#",
-    "authorName": "Maet Lu",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  })
-];
-final List<BlogCard> mockCardsLeft = [
-  BlogCard("/static/images/mobile/tlm-c161024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Cotta, saga, et ionicis tormento.",
-    "subTitleLink": "#",
-    "description":
-        "Pol, particula! Never visualize the ego, for you cannot hear it. One must absorb the lotus in order to study the karma of imminent milk.",
-    "descMoreLink": "#",
-    "descMore": "Start Now",
-    "descBtn": "btn btn-light btn-round",
-    "authorBy": "by",
-    "authorLink": "#",
-    "authorName": "Randy Smuit",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  }),
-  BlogCard("/static/images/mobile/tlm-c171024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Cur hibrida tolerare?",
-    "subTitleLink": "#",
-    "description": "Heat squeezed sauerkraut in a basin with teriyaki for about an hour to bring down their bitterness.",
-    "descMoreLink": "#",
-    "descMore": "Read More",
-    "descBtn": "btn btn-dark btn-round",
-    "authorBy": "not by",
-    "authorLink": "#",
-    "authorName": "Tim Smit",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  }),
-  BlogCard("/static/images/mobile/tlm-c181024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Superbus gemnas ducunt ad visus.",
-    "subTitleLink": "#",
-    "description": "The beloved light of stigma is to believe with harmony.",
-    "descMoreLink": "#",
-    "descMore": "Read More",
-    "descBtn": "btn btn-warning btn-round",
-    "authorBy": "by",
-    "authorLink": "#",
-    "authorName": "Jony Wade",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  }),
-  BlogCard("/static/images/mobile/tlm-c191024by720.jpg", "Observare semper ducc.",
-      "The surrender of your arts will listen beautifully when you hear that advice is the saint.", {
-    "subTitle": "Genetrix talis cursus est.",
-    "subTitleLink": "#",
-    "description": "When the breeze hobbles for isla de muerta, all shipmates fear coal-black, proud shores.",
-    "descMoreLink": "#",
-    "descMore": "Let's Go",
-    "descBtn": "btn btn-success btn-round",
-    "authorBy": "by",
-    "authorLink": "#",
-    "authorName": "Maet Lu",
-    "authorPhoto": "/static/images/faces/ayo-ogunseinde-1.jpg",
-    "wroteDate": "2018",
-  })
+  )
 ];

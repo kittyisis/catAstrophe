@@ -1,128 +1,3 @@
-<!--        default navbar with profile photo -->
-<!-- Navbar -->
-<!--
-<nav class="navbar navbar-expand-lg nav-down navbar-absolute" color-on-scroll="500">
-	<div class="container">
-		<div class="navbar-translate">
-			<a class="navbar-brand" [routerLink]="RoutePaths.discover.toUrl()"
-			   [routerLinkActive]="'active-route'"  rel="tooltip" [title]="name" data-placement="bottom" target="_blank" id="menu-title">
-				{{name}}
-			</a>
-			<button id="menu-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
-					aria-label="Toggle navigation" (click)="menuNav()">
-				<span class="navbar-toggler-bar bar1"></span>
-				<span class="navbar-toggler-bar bar2"></span>
-				<span class="navbar-toggler-bar bar3"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse" id="menu-sub" data-color="orange">
-			<ul class="navbar-nav ml-auto">
-				<li class="dropdown nav-item">
-					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-						Components </a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-danger">
-						<a [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							All Components
-						</a>
-						<a href="./docs/2.0/getting-started/introduction.html" class="dropdown-item">
-							Documentation
-						</a>
-					</div>
-				</li>
-				<li class="dropdown nav-item">
-					<a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
-						Sections
-					</a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" data-scroll="true" data-id="#headers" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-tile-56"></i> Headers
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#features" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-settings"></i> Features
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#blogs" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-bullet-list-67"></i> Blogs
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#teams" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-single-02"></i> Teams
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#projects" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-calendar-60"></i> Projects
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-money-coins"></i> Pricing
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#testimonials" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-badge"></i> Testimonials
-						</a>
-						<a class="dropdown-item" data-scroll="true" data-id="#contact-us" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-mobile"></i> Contact Us
-						</a>
-					</div>
-				</li>
-				<li class="dropdown nav-item">
-					<a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink1" data-toggle="dropdown">
-						Examples
-					</a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink1">
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-bank"></i> About
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-basket"></i> Add Product
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-badge"></i> Blog Post
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-bullet-list-67"></i> Blog Posts
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-mobile"></i> Contact Us
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-world-2"></i> Discover
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-send"></i> e-Commerce
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-spaceship"></i> Landing Page
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-lock-circle-open"></i> Login
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-album-2"></i> Product
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-single-02"></i> Profile
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-bookmark-2"></i> Register
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-zoom-split"></i> Search
-						</a>
-						<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-							<i class="nc-icon nc-settings-gear-65"></i> Settings
-						</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="btn btn-round btn-danger" target="_blank">
-						<i class="nc-icon nc-cart-simple"></i> Try Now
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
--->
-			<!-- End Navbar -->
-<!-- End Navbar -->
-<!--         default navbar with notifications     -->
-
 <!--
  Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file
  for details. All rights reserved. Use of this source code is governed by a
@@ -136,7 +11,7 @@
 		<section class="md-background navbar">
 			<div class="navbar-brand title-bar ">
 			<span>
-				<h2 class="text-white">Kitty</h2>
+				<h2 class="text-white">My Fat Cat</h2>
 			</span>
 
 			</div>
@@ -148,89 +23,82 @@
 				<material-list-item>
 					<a class="dropdown-item text-white" [routerLink]="RoutePaths.landing.toUrl()" [routerLinkActive]="'active-route'">
 						<span>
-							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#home-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#hospital-2"></use></svg>
 						</span> home
 					</a>
 				</material-list-item>
 				<material-list-item>
 					<a class="dropdown-item text-white" [routerLink]="RoutePaths.aboutUs.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#shield-grid-1"></use></svg>
+							<svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#medical-record-1"></use></svg>
 						</i> About
 					</a>
 				</material-list-item>
 				<material-list-item>
 					<a class="dropdown-item text-white" [routerLink]="RoutePaths.addProduct.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#envelope-1"></use></svg>
-						</i> Journal
+							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#lady-1"></use></svg>
+						</i> Student
 					</a>
 				</material-list-item>
 				<material-list-item>
 					<a class="dropdown-item text-white" [routerLink]="RoutePaths.blogPost.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-4"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#home-1"></use></svg>
-						</i> Feed
+							<svg width="30" height="50" class="theme-color-4"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#sandwich-1"></use></svg>
+						</i> Food
 					</a>
 				</material-list-item>
 				<material-list-item>
 					<a class="dropdown-item text-white" [routerLink]="RoutePaths.blogPosts.toUrl()" [routerLinkActive]="'active-route'">
 						<i >
-							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#sandwich-1"></use></svg>
-						</i> Food
+							<svg width="30" height="50" class="theme-color-5"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#dna-1"></use></svg>
+						</i> Biography
 					</a>
 				</material-list-item>
 				<material-list-item>
 					<a class="dropdown-item text-white" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#binocular-1"></use></svg>
-						</i> Feeds
+							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#smiley-1"></use></svg>
+						</i> Hobbies
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.eCommerce.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.eCommerce.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#ecommerce-cart-1"></use></svg>
-						</i> e-Commerce
+							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#student-1"></use></svg>
+						</i> Tips
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.login.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.login.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-8"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#import-1"></use></svg>
-						</i> Login
+							<svg width="30" height="50" class="theme-color-8"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#like-hand-1"></use></svg>
+						</i> Pros
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.product.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.profile.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-9"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#items-in-cart-1"></use></svg>
-						</i> Product
+							<svg width="30" height="50" class="theme-color-3"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#dislike-hand-1"></use></svg>
+						</i> Cons
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.profile.toUrl()" [routerLinkActive]="'active-route'">
-						<i>
-							<svg width="30" height="50" class="theme-color-3"><use xlink:href="/static/icons/md-drawer/md-drawer.svg#software-service-1"></use></svg>
-						</i> Profile
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.register.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.register.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-10">
-								<use xlink:href="/static/icons/md-drawer/md-drawer.svg#label-tag-1"></use>
+								<use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#medical-record-1"></use>
 							</svg>
-						</i> Register
+						</i> Is a cat for you
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.settings.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.settings.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-13">
-								<use xlink:href="/static/icons/md-drawer/md-drawer.svg#archive-settings-1"></use>
+								<use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#stars-1"></use>
 							</svg>
-						</i> Settings
+						</i> Things I wish I knew
 					</a>
 				</material-list-item>
 
@@ -255,100 +123,6 @@
 </section>
 	</material-drawer>
 
-
-<!--
-<material-drawer persistent #drawer="drawer"
-				 [class.custom-width]="customWidth"
-				 [attr.end]="end ? '' : null">
-		<material-list *deferredContent>
-			<div group class="mat-drawer-spacer"></div>
-			<div group>
-				<material-list-item>
-					<a class="dropdown-item" data-scroll="true" data-id="#headers" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-tile-56"></i> Headers
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-bank"></i> About
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-basket"></i> Add Product
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-badge"></i> Blog Post
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-bullet-list-67"></i> Blog Posts
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-mobile"></i> Contact Us
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-world-2"></i> Discover
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-send"></i> e-Commerce
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-spaceship"></i> Landing Page
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-lock-circle-open"></i> Login
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-album-2"></i> Product
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-single-02"></i> Profile
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-bookmark-2"></i> Register
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-zoom-split"></i> Search
-					</a>
-				</material-list-item>
-				<material-list-item>
-					<a class="dropdown-item" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
-						<i class="nc-icon nc-settings-gear-65"></i> Settings
-					</a>
-				</material-list-item>
-			</div>
-			<div group>
-				<div label>Tags</div>
-				<material-list-item>
-					<material-icon icon="star"></material-icon>Favorites
-				</material-list-item>
-			</div>
-		</material-list>
-
-</material-drawer>
--->
 <div class="material-content">
 	<header class="material-header shadow">
 		<div class="material-header-row">
@@ -364,7 +138,7 @@
 				<nav class="nav-item rm-small-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.home.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-line-0"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#home-1"></use></svg>
+							<svg width="30" height="50" class="theme-line-0"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#hospital-2"></use></svg>
 						</i> Home
 					</a>
 				</nav>
@@ -379,23 +153,23 @@
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.product.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#envelope-1"></use></svg>
-						</i> Journal
+						</i> Email
 					</a>
 				</nav>
 				<nav class="nav-item rm-standard-screen">
 					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.product.toUrl()" [routerLinkActive]="'active-route'">
-						<i><svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#electronic-medical-record-1"></use></svg></i>
+						<i><svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#chats-1"></use></svg></i>
 					</a>
 				</nav>
 				<nav class="nav-item rm-small-screen">
-					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.eCommerce.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
-							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#electronic-medical-record-1"></use></svg>
-						</i> Photos
+							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#chats-1"></use></svg>
+						</i> Video
 					</a>
 				</nav>
 				<nav class="nav-item rm-standard-screen">
-					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.eCommerce.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-p" data-scroll="true" data-id="#pricing" [routerLink]="RoutePaths.discover.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-6"><use xlink:href="/static/icons/kitty-icons/Kittys-icons.svg#electronic-medical-record-1"></use></svg>
 						</i>
@@ -446,7 +220,7 @@
 			</nav>
 			<div class="credits ml-auto">
           <span class="copyright">
-            © {{copyright}}, made with love by {{name}}
+            © {{copyright}}, made with love by {{footerName}}
           </span>
 			</div>
 		</div>

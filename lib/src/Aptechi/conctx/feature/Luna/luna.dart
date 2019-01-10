@@ -5,7 +5,12 @@ import 'package:app/logic/features.dart';
 
 import '../features_service.dart';
 
-@Component(selector: 'luna', templateUrl: 'luna.html', directives: const [coreDirectives], providers: const [ClassProvider(FeaturesService)])
+@Component(
+  selector: 'luna',
+   templateUrl: 'luna.html',
+    directives: const [coreDirectives],
+     providers: const [ClassProvider(FeaturesService)],
+     )
 class Luna implements OnInit {
   List<FeatureLuna> data;
   final FeaturesService _featureService;

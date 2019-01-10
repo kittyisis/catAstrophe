@@ -10,11 +10,11 @@ List<FeatureAppShowcase> loadFeatureAppShowcase([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     FeatureAppShowcase x = new FeatureAppShowcase();
     x.id = i;
-    x.photo = "/static/images/PhoneApp/afzPhoneApp.png";
-    x.title = titles[num.nextInt(17)];
-    x.subTitle = subTitles[num.nextInt(14)];
-    x.titleSpan = "AdFreeZone";
-    x.featuresList = ["Cum mortem", " accelerare, omnes", " menses imperium clemens", "altus eleateses."];
+    x.photo = "/static/images/unsplash/img_5.jpg";
+    x.title = "Keep your cat out the kitchen as much as possible!";
+    x.subTitle = "Their fur floats";
+    x.titleSpan = "Pro Tips";
+    x.featuresList = ["Try out different cat foods to decide which fits the best", "Buy soft cheap toys instead of expensive ones", "Buy scented litter...it helps so much", "Take time to learn they’re physical responses to certain situations"];
     data.add(x);
   }
   return data;
@@ -64,14 +64,15 @@ List<FeatureLuna> loadFeatureLuna([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     FeatureLuna x = new FeatureLuna();
     x.id = i;
-    x.title = titles[num.nextInt(17)];
+    x.title = "Rosanellie Happy-melon Shabazz";
     x.subTitle = subTitles[num.nextInt(12)];
-    x.card1 = cards[num.nextInt(5)];
-    x.card2 = cards[num.nextInt(5)];
-    x.card3 = cards[num.nextInt(5)];
-    x.card4 = cards[num.nextInt(5)];
+    x.card1 = lunacards[0];
+    x.card2 = lunacards[1];
+    x.card3 = lunacards[2];
+    x.card4 = lunacards[3];
     // image size need to be 495px x 1,428px
-    x.photo = "/static/images/phoneSizes/iphone/tlm-luna-c${num.nextInt(24)}-495x1428.jpg";
+    // x.photo = "/static/images/phoneSizes/iphone/tlm-luna-c${num.nextInt(24)}-495x1428.jpg";
+    x.photo = "/static/images/kittyPhotos/VLowImages/img_0.jpg";
 
     data.add(x);
   }
@@ -111,7 +112,8 @@ List<FeatureZilka> loadFeatureZilka([int howMany = 1]) {
     x.card2 = cards[num.nextInt(5)];
     x.card3 = cards[num.nextInt(5)];
     x.card4 = cards[num.nextInt(5)];
-    x.photo = "/static/images/HD/tlm-c${num.nextInt(50)}1920x1200.jpg";
+    // x.photo = "/static/images/HD/tlm-c${num.nextInt(50)}1920x1200.jpg";
+    x.photo = "/static/images/unsplash/img_${num.nextInt(5)}.jpg";
     data.add(x);
   }
   return data;
@@ -199,5 +201,35 @@ List<FeatureCard> cards = [
     {"buttonText": "Get More", "buttonLink": "#"},
     "/static/images/mobile/tlm-c861024by720.jpg",
     6,
+  ),
+];
+List<FeatureCard> lunacards = [
+  FeatureCard(
+    "Biography",
+    "Before my family and I adopted her, her name was Rosalie.",
+    {"buttonText": "Read More", "buttonLink": "#/blog_posts"},
+    "/static/images/unsplash/img_0.jpg",
+    1,
+  ),
+  FeatureCard(
+    "Hobbies",
+    "Inside cats don’t do much with their time besides sleep and eat.",
+    {"buttonText": "See More", "buttonLink": "#/discover"},
+    "/static/images/unsplash/img_2.jpg",
+    2,
+  ),
+  FeatureCard(
+    "Student",
+    "I am a current Senior in high school completing a graduation requirement",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    3,
+  ),
+  FeatureCard(
+    "Things I Wish I’d Known Before I Got A Cat",
+    "Cats are...very interesting. Like they could entertain you from sunrise to sunset or you could go without seeing them for several hours at time.",
+    {"buttonText": "Get More", "buttonLink": "#/settings"},
+    "/static/images/unsplash/img_4.jpg",
+    4,
   ),
 ];

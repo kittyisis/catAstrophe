@@ -24,19 +24,8 @@ List<BlogMenu> loadBlogMenu() {
 
   List<BlogCard> cards = new List<BlogCard>();
   List<String> titles = [
-    "falsis, ionicis torment.",
-    "cur ignigena potus.",
-    "cur tata peregrinatione.",
-    "with cauliflowers drink kefir.",
-    "cur boreas ridetis.",
-    "pestilence, faith, and passion.",
-    "never love a hater.",
-    "galaxy, wind, and sensor.",
-    "with spinach drink lime.",
-    "lagoons wave with punishment.",
-    "separate uniquenesses rejects.",
-    "nunquam prensionem triticum.",
-    "advena pius humani generis est.",
+    "How To Tell If A Cat Is For You",
+    "Things I Wish I’d Known Before I Got A Cat",
   ];
   Random rn = new Random();
   mockCards.forEach((i) {
@@ -45,7 +34,7 @@ List<BlogMenu> loadBlogMenu() {
     if (count == 5) {
       ID++;
       BlogMenuCards menuCards = new BlogMenuCards(cards[0], cards[1], cards[2], cards[3], cards[4]);
-      BlogMenu data = new BlogMenu(titles[rn.nextInt(12)], ID, menuCards);
+      BlogMenu data = new BlogMenu(titles[rn.nextInt(2)], ID, menuCards);
       blogMenu.add(data);
       count = 0;
       cards.clear();
