@@ -256,7 +256,7 @@ final List<BlogCard> adorraCards = [
     {
       "subTitle": "How Rosalie became Happy-melon ",
       "subTitleLink": "#",
-      "description": "Yet my 5 year old  sister liked the name Happy-melon.",
+      "description": "When she was adopted her name was Rosalie. Yet my 5 year old  sister liked the name Happy-melon.",
       "descMoreLink": "#",
       "descMore": "",
       "descBtn": "btn btn-danger btn-round",

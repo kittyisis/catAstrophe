@@ -5,7 +5,7 @@ import 'package:app/logic/features.dart';
 // loadFeatureAppShowcase
 List<FeatureAppShowcase> loadFeatureAppShowcase([int howMany = 1]) {
   List<FeatureAppShowcase> data = new List<FeatureAppShowcase>();
-  Random num = new Random();
+  // Random num = new Random();
   // 18 Titles 15 subtitles 6 cards
   for (int i = 0; i < howMany; i++) {
     FeatureAppShowcase x = new FeatureAppShowcase();
@@ -30,7 +30,7 @@ List<FeatureKoldof> loadFeatureKoldof([int howMany = 1]) {
 - There’s always someone home to keep you company without annoying you  
    */
   List<FeatureKoldof> data = new List<FeatureKoldof>();
-  Random num = new Random();
+  // Random num = new Random();
   // 18 Titles 15 subtitles 6 cards
   for (int i = 0; i < howMany; i++) {
     FeatureKoldof x = new FeatureKoldof();
@@ -330,7 +330,7 @@ Cons:
  */
   FeatureCard(
     "Litter ...",
-    "If you like to cuddle then yes.",
+    "Litter gets EVERYWHERE",
     {"buttonText": "Read More", "buttonLink": "#/blog_posts"},
     "/static/images/unsplash/img_0.jpg",
     1,
