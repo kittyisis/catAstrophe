@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Sorry Emoji</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M45.8 48.2a18.5 18.5 0 0 0-27.7 0M18 28a4.2 4.2 0 0 0 4 2 4.2 4.2 0 0 0 4-2m12 0a4.2 4.2 0 0 0 4 2 4.2 4.2 0 0 0 4-2"
+  fill="none" stroke="#f507a0" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <circle data-name="layer1" cx="32" cy="32" r="30" fill="none" stroke="#2ddfc7"
+  stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></circle>
+</svg>

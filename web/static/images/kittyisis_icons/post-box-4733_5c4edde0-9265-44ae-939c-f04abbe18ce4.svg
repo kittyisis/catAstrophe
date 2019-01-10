@@ -1,0 +1,14 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Post Box</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path d="M14 52h36v10H14zm3 0V14m30 38V14"
+  stroke-width="2" stroke-miterlimit="10" stroke="#2ddfc7" fill="none" data-name="layer1"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path d="M25.736 23h13M24 32h16v14H24z" stroke-width="2" stroke-miterlimit="10"
+  stroke="#f507a0" fill="none" data-name="layer2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <path stroke-width="2" stroke-miterlimit="10" stroke="#2ddfc7"
+  fill="none" d="M51 9a29.283 29.283 0 0 0-38 0l1.992 5H49z" data-name="layer1"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>

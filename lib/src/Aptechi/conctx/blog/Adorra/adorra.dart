@@ -21,6 +21,6 @@ class Adorra implements OnInit {
   Adorra(this._blogService);
 
   Future<void> ngOnInit() async {
-    blogs = await _blogService.getAll();
+    blogs = await _blogService.getAdorra();
   }
 }

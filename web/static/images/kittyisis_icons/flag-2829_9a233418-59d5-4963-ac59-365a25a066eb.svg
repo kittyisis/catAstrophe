@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Flag</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#f507a0" stroke-miterlimit="10" stroke-width="2" d="M8 32h30L32.8 6h-30"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer2" fill="none" stroke="#f507a0" stroke-miterlimit="10"
+  stroke-width="2" d="M29.8 32L32 42h30L50 29.8 56.8 18H35.2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#2ddfc7" stroke-miterlimit="10"
+  stroke-width="2" d="M2 2l12 60" stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>

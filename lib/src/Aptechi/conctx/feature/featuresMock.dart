@@ -21,18 +21,26 @@ List<FeatureAppShowcase> loadFeatureAppShowcase([int howMany = 1]) {
 } // loadFeatureKoldof
 
 List<FeatureKoldof> loadFeatureKoldof([int howMany = 1]) {
+  /* 
+  Pros: 
+- Cuddles
+- Playful
+- Warm your feet when they lay on them
+- They clean you all the time- obviously cares about my well being
+- There’s always someone home to keep you company without annoying you  
+   */
   List<FeatureKoldof> data = new List<FeatureKoldof>();
   Random num = new Random();
   // 18 Titles 15 subtitles 6 cards
   for (int i = 0; i < howMany; i++) {
     FeatureKoldof x = new FeatureKoldof();
     x.id = i;
-    x.title = titles[num.nextInt(17)];
-    x.subTitle = subTitles[num.nextInt(14)];
-    x.card1 = cards[num.nextInt(5)];
-    x.card2 = cards[num.nextInt(5)];
-    x.card3 = cards[num.nextInt(5)];
-    x.card4 = cards[num.nextInt(5)];
+    x.title = "The pros of having a cat";
+    x.subTitle = "Nellie (Kitty) also likes to jingle some of the little bells we have in the house and leave her stuffed mouse on the stairs for everyone to trip over. She especially enjoys racing people up the stairs and beating them to the top… even if it means almost making them fall over. ";
+    x.card1 = koldofcards[0];
+    x.card2 = koldofcards[1];
+    x.card3 = koldofcards[2];
+    x.card4 = koldofcards[3];
     data.add(x);
   }
   return data;
@@ -40,17 +48,25 @@ List<FeatureKoldof> loadFeatureKoldof([int howMany = 1]) {
 
 // loadFeatureLerin
 List<FeatureLerin> loadFeatureLerin([int howMany = 1]) {
+  /* 
+  How To Tell If A Cat Is For You:
+Are you looking for something to keep you company besides your man? 
+Are you looking for a pet that doesn’t need to be walked when it’s cold outside? 
+Do you want more responsibility? 
+Do you keep killing plants? 
+Get a cat sis
+   */
   List<FeatureLerin> data = new List<FeatureLerin>();
   Random num = new Random();
   // 18 Titles 15 subtitles 6 cards
   for (int i = 0; i < howMany; i++) {
     FeatureLerin x = new FeatureLerin();
     x.id = i;
-    x.title = titles[num.nextInt(17)];
-    x.subTitle = subTitles[num.nextInt(12)];
-    x.card1 = cards[num.nextInt(5)];
-    x.card2 = cards[num.nextInt(5)];
-    x.card3 = cards[num.nextInt(5)];
+    x.title = "How To Tell If A Cat Is For You";
+    x.subTitle = "Are you bored or just want something to love?";
+    x.card1 = lerincards[1];
+    x.card2 = lerincards[2];
+    x.card3 = lerincards[0];
     data.add(x);
   }
   return data;
@@ -87,12 +103,12 @@ List<FeatureMitar> loadFeatureMitar([int howMany = 1]) {
   for (int i = 0; i < howMany; i++) {
     FeatureMitar x = new FeatureMitar();
     x.id = i;
-    x.title = titles[num.nextInt(17)];
-    x.subTitle = subTitles[num.nextInt(12)];
-    x.card1 = cards[num.nextInt(5)];
-    x.card2 = cards[num.nextInt(5)];
-    x.card3 = cards[num.nextInt(5)];
-    x.photo = "/static/images/phoneSizes/ipad/tlm-mitar-c${num.nextInt(24)}-1500x1884.jpg";
+    x.title = "I am a current Senior in high school completing a graduation requirement.";
+    x.subTitle = "This was one interesting experience and I probably wouldn’t do it again.";
+    x.card1 = mitarcards[0];
+    x.card2 = mitarcards[1];
+    x.card3 = mitarcards[2];
+    x.photo = "/static/images/students/img_1.jpg";
     data.add(x);
   }
   return data;
@@ -100,18 +116,26 @@ List<FeatureMitar> loadFeatureMitar([int howMany = 1]) {
 
 // loadFeatureZilka
 List<FeatureZilka> loadFeatureZilka([int howMany = 1]) {
+  /* 
+  Cons: 
+- Litter gets EVERYWHERE
+- Can’t leave your food just anywhere because they’ll eat it
+- Like to lay in the middle of the bed before you can stretch out
+- They knock everything down just for fun
+- They scratch paint off of the walls
+   */
   List<FeatureZilka> data = new List<FeatureZilka>();
   Random num = new Random();
   // 18 Titles 15 subtitles 6 cards
   for (int i = 0; i < howMany; i++) {
     FeatureZilka x = new FeatureZilka();
     x.id = i;
-    x.title = titles[num.nextInt(17)];
-    x.subTitle = subTitles[num.nextInt(12)];
-    x.card1 = cards[num.nextInt(5)];
-    x.card2 = cards[num.nextInt(5)];
-    x.card3 = cards[num.nextInt(5)];
-    x.card4 = cards[num.nextInt(5)];
+    x.title = "The Cons of having a cat";
+    x.subTitle = "";
+    x.card1 = zilkacards[0];
+    x.card2 = zilkacards[1];
+    x.card3 = zilkacards[2];
+    x.card4 = zilkacards[3];
     // x.photo = "/static/images/HD/tlm-c${num.nextInt(50)}1920x1200.jpg";
     x.photo = "/static/images/unsplash/img_${num.nextInt(5)}.jpg";
     data.add(x);
@@ -233,3 +257,144 @@ List<FeatureCard> lunacards = [
     4,
   ),
 ];
+List<FeatureCard> mitarcards = [
+  FeatureCard(
+    "Tools",
+    "Visual Studio Code, LibreOffice, Git (GitHub.com) and nano",
+    {"buttonText": "Read More", "buttonLink": "#/blog_posts"},
+    "/static/images/unsplash/img_0.jpg",
+    1,
+  ),
+  FeatureCard(
+    "Languages and framework",
+    "Googles Dartlang, HTML and AngularDart ",
+    {"buttonText": "See More", "buttonLink": "#/discover"},
+    "/static/images/unsplash/img_2.jpg",
+    2,
+  ),
+  FeatureCard(
+    "Thoughts ...",
+    " I created this so I can learn about the nooks and crannies of the coding process. Thanks for joining me on this journey and I hope you like the product!",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    3,
+  ),
+];
+List<FeatureCard> koldofcards = [
+  /* 
+  
+  Pros: 
+- Cuddles
+- Playful
+- Warm your feet when they lay on them
+- They clean you all the time- obviously cares about my well being
+- There’s always someone home to keep you company without annoying you  
+ */
+  FeatureCard(
+    "Cuddles ...",
+    "If you like to cuddle then yes.",
+    {"buttonText": "Read More", "buttonLink": "#/blog_posts"},
+    "/static/images/unsplash/img_0.jpg",
+    1,
+  ),
+  FeatureCard(
+    "Playful ...",
+    "All the hours of fun yes.",
+    {"buttonText": "See More", "buttonLink": "#/discover"},
+    "/static/images/unsplash/img_2.jpg",
+    2,
+  ),
+  FeatureCard(
+    "Warm ...",
+    "Warm your feet when they lay on them yes.",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    3,
+  ),
+  FeatureCard(
+    "Clean ...",
+    "They clean you all the time- obviously cares about my well being yes.",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    4,
+  ),
+];
+List<FeatureCard> zilkacards = [
+  /* 
+Cons: 
+- Litter gets EVERYWHERE
+- Can’t leave your food just anywhere because they’ll eat it
+- Like to lay in the middle of the bed before you can stretch out
+- They knock everything down just for fun
+- They scratch paint off of the walls
+ */
+  FeatureCard(
+    "Litter ...",
+    "If you like to cuddle then yes.",
+    {"buttonText": "Read More", "buttonLink": "#/blog_posts"},
+    "/static/images/unsplash/img_0.jpg",
+    1,
+  ),
+  FeatureCard(
+    "Bed ...",
+    "Like to lay in the middle of the bed before you can stretch out",
+    {"buttonText": "See More", "buttonLink": "#/discover"},
+    "/static/images/unsplash/img_2.jpg",
+    2,
+  ),
+  FeatureCard(
+    "Food ...",
+    "Can’t leave your food just anywhere because they’ll eat it",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    3,
+  ),
+  FeatureCard(
+    "Scratch ...",
+    "They scratch paint off of the walls",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    4,
+  ),
+];
+
+List<FeatureCard> lerincards = [
+  /* 
+  How To Tell If A Cat Is For You:
+Are you looking for something to keep you company besides your man? 
+Are you looking for a pet that doesn’t need to be walked when it’s cold outside? 
+Do you want more responsibility? 
+Do you keep killing plants? 
+Get a cat sis
+   */
+
+  FeatureCard(
+    "Lonley ...",
+    "Are you looking for something to keep you company besides your man?",
+    {"buttonText": "Read More", "buttonLink": "#/blog_posts"},
+    "/static/images/unsplash/img_5.jpg",
+    1,
+  ),
+  FeatureCard(
+    "Cold ...",
+    "Are you looking for a pet that doesn’t need to be walked when it’s cold outside?",
+    {"buttonText": "See More", "buttonLink": "#/discover"},
+    "/static/images/unsplash/img_4.jpg",
+    2,
+  ),
+  FeatureCard(
+    "Bored ...",
+    "Do you want more responsibility?",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_0.jpg",
+    3,
+  ),
+  FeatureCard(
+    "Green Thumb ...",
+    "Do you keep killing plants? Get a cat sis.",
+    {"buttonText": "Know More", "buttonLink": "#/add_product"},
+    "/static/images/unsplash/img_3.jpg",
+    4,
+  ),
+];
+

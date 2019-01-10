@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>First Aid Kit</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#f507a0" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" d="M43 33h-8v-8h-6v8h-8v6h8v8h6v-8h8v-6z" stroke-linejoin="round"></path>
+  <rect data-name="layer1" x="2" y="15" width="60" height="42" rx="6"
+  ry="6" fill="none" stroke="#2ddfc7" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></rect>
+  <path data-name="layer1" d="M23 15v-4a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v4"
+  fill="none" stroke="#2ddfc7" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></path>
+</svg>

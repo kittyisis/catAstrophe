@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Verify Woman User</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  fill="none" stroke="#2ddfc7" stroke-miterlimit="10" stroke-width="2" d="M54 44l-7 8-4-4"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer2" d="M34.1 50H2s0-6 7-8 9-4.4 9-6v-2a61.4 61.4 0 0 1-12-2c3.3-3.3 6-4.3 6-18 0-6 3.7-11.6 10-11.6S36 2.3 36 14c0 13.7 2.7 14.7 6 18a61.7 61.7 0 0 1-12 2v2c0 1.4.8 3.1 5.9 5"
+  fill="none" stroke="#f507a0" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <circle data-name="layer1" cx="48" cy="48" r="14" fill="none" stroke="#2ddfc7"
+  stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></circle>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Letter Box</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#f507a0" stroke-miterlimit="10" stroke-width="2" d="M34 62V44"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#2ddfc7" stroke-miterlimit="10"
+  stroke-width="2" d="M10 24H2.4l2.4 16H10" stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer2" d="M62 44V28a10 10 0 0 0-10-10H10v26z"
+  fill="none" stroke="#f507a0" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#2ddfc7" stroke-miterlimit="10"
+  stroke-width="2" d="M20 2h14v8H20zm0 24V10" stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>

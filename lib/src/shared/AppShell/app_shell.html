@@ -21,14 +21,14 @@
 			<div group class="mat-drawer-spacer"></div>
 			<div group>
 				<material-list-item>
-					<a class="dropdown-item text-white" [routerLink]="RoutePaths.landing.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.home.toUrl()" [routerLinkActive]="'active-route'">
 						<span>
 							<svg width="30" height="50" class="theme-color-7"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#hospital-2"></use></svg>
 						</span> home
 					</a>
 				</material-list-item>
 				<material-list-item>
-					<a class="dropdown-item text-white" [routerLink]="RoutePaths.aboutUs.toUrl()" [routerLinkActive]="'active-route'">
+					<a class="dropdown-item text-white" [routerLink]="RoutePaths.landing.toUrl()" [routerLinkActive]="'active-route'">
 						<i>
 							<svg width="30" height="50" class="theme-color-0"><use xlink:href="/static/icons/kittyisis_sprite/kitty-isis-svg-sprite.svg#medical-record-1"></use></svg>
 						</i> About
@@ -201,19 +201,14 @@
 						>{{name}}</a>
 					</li>
 					<li>
-						<a [routerLink]="RoutePaths.contactUs.toUrl()"
+						<a [routerLink]="RoutePaths.addProduct.toUrl()"
 						   [routerLinkActive]="'active-route'"
-						>Contact</a>
+						>Student</a>
 					</li>
 					<li>
 						<a [routerLink]="RoutePaths.blogPosts.toUrl()"
 						   [routerLinkActive]="'active-route'"
-						>Blog</a>
-					</li>
-					<li>
-						<a [routerLink]="RoutePaths.licenses.toUrl()"
-						   [routerLinkActive]="'active-route'"
-						>licenses</a>
+						>Biography</a>
 					</li>
 
 				</ul>

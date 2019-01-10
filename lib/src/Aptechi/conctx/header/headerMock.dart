@@ -62,7 +62,7 @@ List<HeaderRyiah> loadHeaderRyiah([int howMany = 1]) {
       ..subTitle = _subTitles[num.nextInt(8)]
       ..menus = _menus
       ..subMenus = _subMenus
-      ..callToAction = _callToActions[num.nextInt(3)]
+      ..callToAction = {"buttonText": "Get Started", "buttonLink": "#blog_posts"}
       ..carousels = _carousels;
     data.add(x);
   }
@@ -72,16 +72,19 @@ List<HeaderRyiah> loadHeaderRyiah([int howMany = 1]) {
 List<HeaderZigmal> loadHeaderZigmal([int howMany = 1]) {
   List<HeaderZigmal> data = new List<HeaderZigmal>();
   Random num = new Random();
-
+/* 
+Hobbies: 
+Inside cats don’t do much with their time besides sleep and eat. But my cat seems to enjoy pulling up my mother’s new carpet and waking everyone up in the middle of the night. Nellie also likes to jingle some of the little bells we have in the house and leave her stuffed mouse on the stairs for everyone to trip over. She especially enjoys racing people up the stairs and beating them to the top… even if it means almost making them fall over. 
+ */
   for (int i = 0; i < howMany; i++) {
     HeaderZigmal x = new HeaderZigmal()
       ..id = i
-      ..photo = "/static/images/unsplash/img_2.jpg"
-      ..title = _titles[num.nextInt(15)]
-      ..subTitle = _subTitles[num.nextInt(8)]
+      ..photo = ""
+      ..title = "Inside cats don’t do much with their time besides sleep and eat."
+      ..subTitle = "But my cat seems to enjoy pulling up my mother’s new carpet and waking everyone up in the middle of the night. Nellie also likes to jingle some of the little bells we have in the house and leave her stuffed mouse on the stairs for everyone to trip over."
       ..menus = _menus
       ..subMenus = _subMenus
-      ..callToAction = _callToActions[num.nextInt(3)]
+      ..callToAction =   {"buttonText": "Learn More", "buttonLink": "#/home"}
       ..backgroundVideo = _videos[num.nextInt(2)];
     data.add(x);
   }
@@ -89,8 +92,9 @@ List<HeaderZigmal> loadHeaderZigmal([int howMany = 1]) {
 }
 
 List<imageCarousel> _carousels = [
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_6.jpg", 1),
-  imageCarousel.data(_titles[num.nextInt(15)], _subTitles[num.nextInt(8)], "/static/images/kittyPhotos/img_0.jpg", 2),
+  imageCarousel.data("Welcome to My Fat Cat", "This website was created as a learning experience for my senior project. I hope you enjoy your time here and learn some quirky things about my lovely kitty", "/static/images/kittyPhotos/img_3.jpg", 1),
+  imageCarousel.data("Welcome to My Fat Cat", "This website was created as a learning experience for my senior project. I hope you enjoy your time here and learn some quirky things about my lovely kitty", "/static/images/kittyPhotos/img_1.jpg", 2),
+  imageCarousel.data("Welcome to My Fat Cat", "This website was created as a learning experience for my senior project. I hope you enjoy your time here and learn some quirky things about my lovely kitty", "/static/images/kittyPhotos/img_5.jpg", 3),
 ];
 
 // Default Inputs
